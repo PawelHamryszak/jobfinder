@@ -21,5 +21,4 @@ const AreaChartComponent = ({ data }) => {
     </ResponsiveContainer>
   );
 };
-
-export default AreaChart;
+export default AreaChartComponent;

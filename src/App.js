@@ -1,18 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Logo } from "./components";
-import { Landing, Error, Register, ProtectedRoute } from "./pages";
 
+import { Landing, Error, Register, ProtectedRoute } from "./pages";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 import {
-  AllJobs,
   Profile,
-  SharedLayout,
-  Stats,
   AddJob,
+  AllJobs,
+  Stats,
+  SharedLayout,
 } from "./pages/dashboard";
-
 function App() {
   return (
     <BrowserRouter>
@@ -30,8 +27,8 @@ function App() {
           <Route path="add-job" element={<AddJob />} />
           <Route path="profile" element={<Profile />} />
         </Route>
-        <Route path="register" element={<Register />} />
         <Route path="landing" element={<Landing />} />
+        <Route path="register" element={<Register />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <ToastContainer position="top-center" />
