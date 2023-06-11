@@ -1,15 +1,15 @@
 const FormRowSelect = ({ labelText, name, value, handleChange, list }) => {
   return (
-    <div className="form-row">
-      <label htmlFor={name} className="form-label">
+    <div className='form-row'>
+      <label htmlFor={name} className='form-label'>
         {labelText || name}
       </label>
       <select
         name={name}
-        value={value}
         id={name}
+        value={value}
         onChange={handleChange}
-        className="form-select"
+        className='form-select'
       >
         {list.map((itemValue, index) => {
           return (
@@ -22,5 +22,4 @@ const FormRowSelect = ({ labelText, name, value, handleChange, list }) => {
     </div>
   );
 };
-
 export default FormRowSelect;
